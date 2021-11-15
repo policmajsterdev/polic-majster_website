@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Policmajster - gra policyjna w pythonie</title>
+    <meta name="discription" content="Python pygame - blog o powstawaniu gry w języku python" />
+    <meta name="keywords" content="python, pygame, policmajster, programowanie, gra policyjna" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <div id="logo">
+            <img src="{% static '/images/logo.jpg' %}" alt="Policmajster">
+            <br/><br/>
+            <hr>
+        </div>
+
+        <div id="nav">
+            {% include 'konta/navbar.html' %}
+        </div>
+
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <div id="add">
+            cośtam
+        </div>
+
+        <div id="footer">
+            {% include 'konta/footer.html' %}
+        </div>
+    </div>
+
+</body>
+</html>

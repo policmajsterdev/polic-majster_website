@@ -1,0 +1,62 @@
+#container
+{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body
+{
+    background-color: #000000;
+    font-family: Monospace;
+    font-size; 20px;
+    color: white;
+}
+
+h2
+{
+    font-size: 48px;
+    color: #336699;
+}
+
+#logo
+{
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+#nav
+{
+    float: left;
+    font-size: 22px;
+    background-color: #000033;
+    width: 200px;
+    min-height: 620px;
+    padding: 10px;
+    font-family: 'Special Elite', cursive;
+}
+
+#content
+{
+    float: left;
+    background-color: #4d6600;
+    width: 740px;
+    padding: 10px;
+}
+
+#add
+{
+    float: left;
+    background-color: #006666;
+    width: 200px;
+    min-height: 620px;
+    padding: 10px;
+}
+
+#footer
+{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+}
