@@ -1,7 +1,12 @@
 {% extends 'konta/glowna.html'%}
 
 {% block content%}
+{% load static %}
+<h2 align="center">Strona Główna</h2>
+<p>Witaj słuchaczu! Jesteś na stronie poświęconej tworzeniu gry Polic-majster.</p>
+Wybierz interesujący Cię dział z menu i zwiedzaj.<br/>
+Już niebawem rozpoczynasz swoją pierwszą służbę!<br/><br/><br/>
 
-<h2>Strona Główna</h2>
-Pierdu śmierdu
+<img src="{% static '/images/odznaka.jpg' %}"/>
+
 {% endblock %}

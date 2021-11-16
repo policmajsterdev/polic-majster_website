@@ -15,10 +15,18 @@ body
     color: white;
 }
 
+p
+{
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 2px 2px #006699;
+}
+
 h2
 {
     font-size: 48px;
-    color: #336699;
+    color: #334d4d;
+    text-shadow: 1px 1px white;
 }
 
 h3
@@ -30,43 +38,45 @@ h3
 {
     background-color: black;
     text-align: center;
-    padding: 5px;
 }
 
 #nav
 {
     float: left;
     font-size: 24px;
-    background-color: #060d13;
+    background: url("/static/images/leftnav.jpg") no-repeat;
     width: 200px;
     min-height: 620px;
-    padding: 10px;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Athiti', sans-serif;
+    border-right: 1px solid #00264d;
 }
 
 #content
 {
     float: left;
-    background-color: #00111a;
-    width: 740px;
+    background-color: #000d1a;
+    width: 778px;
     min-height: 620px;
     padding: 10px;
+    font-size: 20px;
+    font-family: 'Athiti', sans-serif;
+    text-align: center;
 }
 
 #add
 {
     float: left;
-    background-color: #060d13;
+    background: url("/static/images/rightnav.jpg") no-repeat;
     width: 200px;
     min-height: 620px;
-    padding: 10px;
+    border-left: 1px solid #00264d;
 }
 
 #footer
 {
     clear: both;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .option
@@ -83,4 +93,5 @@ h3
     width: 70%;
     color: white;
     background: url("/static/images/note.jpg") no-repeat;
+    text-shadow: 2px 2px #006699;
 }
