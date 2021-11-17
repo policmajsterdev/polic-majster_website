@@ -95,3 +95,20 @@ h3
     background: url("/static/images/note.jpg") no-repeat;
     text-shadow: 2px 2px #006699;
 }
+
+.pyt
+{
+    padding: 10px;
+    background: url("/static/images/note1.jpg") no-repeat;
+}
+
+.pyt:hover
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    color: white;
+    background: url("/static/images/pyt.jpg") no-repeat;
+    text-shadow: 2px 2px #006699;
+}
