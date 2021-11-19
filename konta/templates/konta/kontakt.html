@@ -1,7 +1,9 @@
 {% extends 'konta/glowna.html'%}
 
 {% block content%}
+<h2>{{ strona.tytul }}</h2>
 
-<h2>Kontakt</h2>
-
+    {{ strona.tresc }}<br/>
+    <div id="data-utw">Wpis z dnia: {{ strona.data_utw }}</div><br/>
+<a href="{% url 'omnie' %}"> Cofnij</a>
 {% endblock %}
