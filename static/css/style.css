@@ -5,8 +5,23 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    filter: alpha(opacity=50);
 
+}
+
+a:link
+{
+    color:white;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color:white;
+}
+
+a:hover
+{
+    color:#666666;
 }
 
 body
@@ -97,6 +112,11 @@ h3
     padding: 10px;
 }
 
+.set-point
+{
+    cursor: pointer;
+}
+
 .option
 {
     padding: 10px;
@@ -106,6 +126,7 @@ h3
 .option:hover
 {
     display: block;
+    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     width: 70%;

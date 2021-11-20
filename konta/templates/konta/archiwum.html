@@ -1,0 +1,18 @@
+{% extends 'konta/glowna.html'%}
+
+{% block content%}
+
+<h3>Wszystkich spraw: {{ total_posts }}</h3>
+<hr width="70%" color="#993333"/>
+<div id="tabelas">
+{% for post in posty %}
+    <div class="setpoint">
+    <a class="set-point" href="{% url 'wpis' post.id %}">{{ post.tytul }}<br/></a>
+    </div>
+    <hr width="50%" color="#00264d"/>
+{% endfor %}
+</div>
+{% endblock %}
+
+
+

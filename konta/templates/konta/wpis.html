@@ -1,9 +1,9 @@
 {% extends 'konta/glowna.html'%}
-
+{% load static %}
 {% block content%}
-<h2>{{ strona.tytul }}</h2>
+<h2>{{ strona.tytul }}<img style="vertical-align:middle;" src="{% static '/images/nt1.jpg' %}"/></h2>
 
     {{ strona.tresc }}<br/>
     <div id="data-utw">Wpis z dnia: {{ strona.data_utw }}</div><br/>
-<a href="{% url 'omnie' %}"> Cofnij</a>
+<a href="{% url 'archiwum' %}"> Cofnij</a>
 {% endblock %}
