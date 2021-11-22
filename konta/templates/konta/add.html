@@ -1,0 +1,10 @@
+{% block content%}
+{% if user.is_authenticated %}
+    <br><p id="user-login">Jesteś zalogowany.</p>
+    <p id="user-login">Służba tuż, tuż!</p>
+    <a href="{% url 'logout' %}"><p>Wyloguj</p></a>
+{% else %}
+    <br><a href="{% url 'login' %}"><p>Logowanie</p></a><br>
+    <a href="{% url 'register' %}"><p>Rejestracja</p></a>
+{% endif %}
+{% endblock %}
