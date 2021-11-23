@@ -3,7 +3,7 @@
 {% block content%}
 <h2>{{ strona.tytul }}<img style="vertical-align:middle;" src="{% static '/images/nt1.jpg' %}"/></h2>
 
-    {{ strona.tresc }}<br/>
+    {{ strona.tresc|safe }}<br/>
     <div id="data-utw">Wpis z dnia: {{ strona.data_utw }}</div><br/>
     {{ data_all }}
 <a href="{% url 'archiwum' %}"> Cofnij</a>

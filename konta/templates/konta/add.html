@@ -1,7 +1,8 @@
 {% block content%}
+{% load static %}
 {% if user.is_authenticated %}
-    <br><p id="user-login">Jesteś zalogowany.</p>
-    <p id="user-login">Służba tuż, tuż!</p>
+    <br><p id="user-login">Zalogowany</p>
+    <img  class="baret" src="{% static '/images/baret.jpg' %}"/>
     <a href="{% url 'logout' %}"><p>Wyloguj</p></a>
 {% else %}
     <br><a href="{% url 'login' %}"><p>Logowanie</p></a><br>
