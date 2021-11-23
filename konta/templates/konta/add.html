@@ -3,9 +3,9 @@
 {% if user.is_authenticated %}
     <br><p id="user-login">Zalogowany</p>
     <img  class="baret" src="{% static '/images/baret.jpg' %}"/>
-    <a href="{% url 'logout' %}"><p>Wyloguj</p></a>
+    <a href="{% url 'logout' %}"><button class="button-reg">Wyloguj</button></a>
 {% else %}
-    <br><a href="{% url 'login' %}"><p>Logowanie</p></a><br>
-    <a href="{% url 'register' %}"><p>Rejestracja</p></a>
+    <br><a href="{% url 'login' %}"><button class="button-reg">Logowanie</button></a><br>
+    <a href="{% url 'register' %}"><button class="button-reg">Rejestracja</button></a>
 {% endif %}
 {% endblock %}

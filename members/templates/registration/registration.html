@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Rejestracja/Logowanie</title>
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css"/>
 </head>
 <body>
-<div class="form-group">
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="butt">Register</button>
-    </form>
+<div id="logo">
+    <img src="{% static '/images/logo.jpg' %}" alt="Policmajster"/>
+    <br/><br/>
+    <div id="container-login">
+        <div class="form-group">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="butt">Zarejestruj</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <a href="{% url 'home' %}"> <-- Cofnij</a>
+    <div id="footer" style="padding:100px;">
+        {% include 'konta/footer.html' %}
+    </div>
+
 </div>
 </body>
 </html>
