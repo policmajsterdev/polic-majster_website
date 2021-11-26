@@ -64,7 +64,8 @@ h3
 
 #user-login
 {
-    color: green;
+    color: white;
+    font-size: 18px;
 }
 
 #logo
@@ -78,7 +79,7 @@ h3
 #data-utw
 {
     font-size: 16px;
-    color: red;
+    color: #196666;
 }
 
 #nav
@@ -179,7 +180,8 @@ h3
   color: white;
 }
 
-.button-reg {
+.button-reg
+{
   transition-duration: 0.4s;
   width: 70%;
   background-color: white;
@@ -189,7 +191,55 @@ h3
   display:block;
 }
 
-.button-reg:hover {
+.button-reg:hover
+{
+  background-color: black;
+  color: white;
+}
+
+#user-comment
+{
+    color: #cc7a00;
+    text-align: left;
+    text-shadow: 2px 2px 8px white;
+}
+
+#body-comment
+{
+    color: #white;
+    text-align: left;
+    display: table;
+    width: 770px;
+    font-style: oblique;
+    font-size: 16px;
+    border-bottom: 1px solid #204060;
+}
+
+#post-comment
+{
+    color: #white;
+    text-align: left;
+    font-size: 12px;
+}
+
+#id-comment
+{
+    color: #cc7a00;
+    text-align: left;
+}
+
+.button-re
+{
+  transition-duration: 0.4s;
+  width: 70%;
+  background-color: #3973ac;
+  border-radius: 4px;
+  font-size: 16px;
+  margin:auto;
+  display:block;
+}
+
+.button-re:hover {
   background-color: black;
   color: white;
 }

@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from .models import Gracze, BlogPost
+from .models import Gracze, BlogPost, Comment
 
 admin.site.register(Gracze)
 admin.site.register(BlogPost)
-# Register your models here.
+admin.site.register(Comment)

@@ -1,7 +1,9 @@
 {% block content%}
 {% load static %}
+<h4 style="text-align: center;">Panel użytkownika</h4>
 {% if user.is_authenticated %}
-    <br><p id="user-login">Zalogowany</p>
+    <hr>
+    <p id="user-login">Witaj</br> {{ user.get_username }}</p><hr>
     <img  class="baret" src="{% static '/images/baret.jpg' %}"/>
     <a href="{% url 'logout' %}"><button class="button-reg">Wyloguj</button></a>
 {% else %}

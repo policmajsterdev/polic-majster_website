@@ -11,6 +11,11 @@
     </div>
     <hr width="50%" color="#00264d"/>
 {% endfor %}
+{% for komentarz in komentarze %}
+    <div id="user-comment">{{ komentarz.name }}<br/></div>
+    <div id="post-comment">dotyczy: {{ komentarz.post }}</div>
+    <div id="body-comment">{{ komentarz.body }}</div><br/>
+{% endfor %}
 </div>
 {% endblock %}
 
