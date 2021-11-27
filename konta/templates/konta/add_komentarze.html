@@ -1,0 +1,21 @@
+{% extends 'konta/glowna.html'%}
+{% load static %}
+{% block content%}
+
+<h2>Odprawa</h2>
+<hr width="70%" color="#993333"/>
+{% if user.is_authenticated %}
+Jesteś zalogowany - możesz komentować.</br>
+{% endif %}
+{% if new_comment %}
+<h3>Dzięki za Twój wkład na odprawie!</h3>
+{% else %}
+        <form method="post" style="width: 100%;">
+            <p>Nick/Imię: {{ comment_form.name }}</p>
+            <p>Post: {{ comment_form.post }}</p>
+            <p>Treść: {{ comment_form.body }}</p>
+            {% csrf_token %}
+            <button type="submit" class="button-re">Dodaj!</button>
+        </form>
+{% endif %}
+{% endblock %}

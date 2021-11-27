@@ -1,0 +1,25 @@
+{% extends 'konta/glowna.html'%}
+
+{% block content%}
+
+<h2>Odprawa - sekcja komentarzy</h2>
+<p>Miejsce, w którym możesz komentować, pytać, pisać - co tylko chcesz.</p>
+<hr width="70%" color="#993333"/>
+{% if user.is_authenticated %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="button-re"><a href="{% url 'dodaj_komentarz' %}">Dodaj komentarz</a></button>
+    {% for komentarz in komentarze %}
+    <div id="user-comment">{{ komentarz.name }}<br/></div>
+    <div id="post-comment">dotyczy: {{ komentarz.post }}</div>
+    <div id="body-comment">{{ komentarz.body }}</div><br/>
+{% endfor %}
+</div>
+</form>
+{% else %}
+Miejsce dostępne tylko dla zalogowanych..</br>
+Wątków w dziale: {{ total_komentarze }}
+{% endif %}
+
+{% endblock %}

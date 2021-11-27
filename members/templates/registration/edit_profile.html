@@ -1,0 +1,13 @@
+{% extends 'konta/glowna.html'%}
+{% load static %}
+{% block content%}
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="butt">Zaktualizuj profil</button>
+    </form>
+</div>
+<br>
+<a href="{% url 'home' %}"> <-- Cofnij</a>
+{% endblock %}

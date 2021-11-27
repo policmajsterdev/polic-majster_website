@@ -5,6 +5,7 @@
     <hr>
     <p id="user-login">Witaj</br> {{ user.get_username }}</p><hr>
     <img  class="baret" src="{% static '/images/baret.jpg' %}"/>
+    <a href="{% url 'edit_profile' %}"><button class="button-reg">Edycja profilu</button></a>
     <a href="{% url 'logout' %}"><button class="button-reg">Wyloguj</button></a>
 {% else %}
     <br><a href="{% url 'login' %}"><button class="button-reg">Logowanie</button></a><br>

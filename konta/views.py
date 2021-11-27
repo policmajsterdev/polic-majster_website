@@ -20,6 +20,7 @@ def archiwum(request):
     context = {'posty': posty, 'total_posts': total_posts}
     return render(request, 'konta/archiwum.html', context)
 
+
 def odprawa(request):
     komentarze = Comment.objects.all().order_by('-date_added')
     total_komentarze = komentarze.count()
@@ -45,7 +46,3 @@ def dodaj_komentarz(request):
     return render(request, 'konta/add_komentarze.html', {
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
-
-def grupa(user):
-    return user.groups.filter(name='Member').exists()
-
