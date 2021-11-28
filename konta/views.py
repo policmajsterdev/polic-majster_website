@@ -15,7 +15,7 @@ def wpis(request, my_id):
 
 
 def archiwum(request):
-    posty = BlogPost.objects.all()
+    posty = BlogPost.objects.all().order_by('-data_utw')
     total_posts = posty.count()
     context = {'posty': posty, 'total_posts': total_posts}
     return render(request, 'konta/archiwum.html', context)

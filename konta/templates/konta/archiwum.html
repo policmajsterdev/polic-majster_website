@@ -1,8 +1,8 @@
 {% extends 'konta/glowna.html'%}
-
+{% load static %}
 {% block content%}
-
-<h3>Wszystkich spraw: {{ total_posts }}</h3>
+<h2>Archiwum RSD<img style="vertical-align:middle;" src="{% static '/images/nt1.jpg' %}"/></h2>
+<h4>Wszystkich spraw: {{ total_posts }}</h4>
 <hr width="70%" color="#993333"/>
 <div id="tabelas">
 {% for post in posty %}
