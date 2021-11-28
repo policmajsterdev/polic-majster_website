@@ -21,6 +21,11 @@ def archiwum(request):
     return render(request, 'konta/archiwum.html', context)
 
 
+def ogrze(request):
+
+    return render(request, 'konta/ogrze.html')
+
+
 def odprawa(request):
     komentarze = Comment.objects.all().order_by('-date_added')
     total_komentarze = komentarze.count()
