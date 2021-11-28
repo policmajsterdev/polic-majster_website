@@ -10,23 +10,26 @@
 <div id="logo">
     <img src="{% static '/images/logo.jpg' %}" alt="Policmajster"/>
     <br/><br/>
-    <div id="container-login">
-        <div class="form-group">
-            <form method="POST">
-                {% csrf_token %}<br><br>
-                <p>Rejestracja jest krótka.</p>
-                <p>Zarejestrowany użytkownik może m.in. komentować w sekcji ODPRAWA</p>
-                {{ form.as_p }}
-                <button class="butt">Zarejestruj</button>
-            </form>
-        </div>
-    </div>
-    <br><br>
-    <a href="{% url 'home' %}"> <-- Cofnij</a>
-    <div id="footer" style="padding:100px;">
-        {% include 'konta/footer.html' %}
-    </div>
+</div>
 
+<div id="container-login">
+    <p>Rejestracja jest krótka.</p>
+    <p>Zarejestrowany użytkownik może m.in. komentować w sekcji ODPRAWA</p><br><br>
+</div>
+<div id="container-form">
+    <form method="POST">
+        {% csrf_token %}
+        Nazwa konta:&nbsp;&nbsp; {{ form.username }}<br><br>
+        Twoje hasło:&nbsp;&nbsp; {{ form.password1 }}<br><br>
+        Powtórz hasło: {{ form.password2 }}<br><br><br><br>
+        <button class="butt">Zarejestruj</button>
+    </form><br><br>
+    <a href="{% url 'home' %}"> <-- Cofnij</a><br><br>
+</div>
+
+
+<div id="footer" style="padding:100px;">
+    {% include 'konta/footer.html' %}
 </div>
 </body>
 </html>

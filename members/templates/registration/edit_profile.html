@@ -2,11 +2,13 @@
 {% load static %}
 {% block content%}
 
-<p>O mnie: {{ user.profile.bio }}</p>
+<p>Edycja profilu funkcjonariusza</p>
 <div class="form-group">
     <form method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
+        Nazwa konta: {{ form.username }}<br><br>
+        Twoje imię:&nbsp; &nbsp;  {{ form.first_name }}<br><br>
+        Twój e-mail:&nbsp;  {{ form.email }}<br><br>
         <button class="button-re">Zaktualizuj profil</button>
     </form>
 </div>
