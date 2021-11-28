@@ -13,7 +13,9 @@
     <div id="container-login">
         <div class="form-group">
             <form method="POST">
-                {% csrf_token %}
+                {% csrf_token %}<br><br>
+                <p>Rejestracja jest krótka.</p>
+                <p>Zarejestrowany użytkownik może m.in. komentować w sekcji ODPRAWA</p>
                 {{ form.as_p }}
                 <button class="butt">Zarejestruj</button>
             </form>

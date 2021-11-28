@@ -1,11 +1,13 @@
 {% extends 'konta/glowna.html'%}
 {% load static %}
 {% block content%}
+
+<p>O mnie: {{ user.profile.bio }}</p>
 <div class="form-group">
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button class="butt">Zaktualizuj profil</button>
+        <button class="button-re">Zaktualizuj profil</button>
     </form>
 </div>
 <br>
