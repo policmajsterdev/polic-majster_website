@@ -8,4 +8,6 @@ urlpatterns = [
     path('komentarze/', views.odprawa, name="komentarze"),
     path('dodaj_komentarz/', views.dodaj_komentarz, name="dodaj_komentarz"),
     path('ogrze/', views.ogrze, name="ogrze"),
+    path('kontakt/', views.kontakt, name="kontakt"),
+    path('python/', views.python, name="python"),
 ]

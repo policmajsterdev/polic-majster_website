@@ -26,6 +26,16 @@ def ogrze(request):
     return render(request, 'konta/ogrze.html')
 
 
+def kontakt(request):
+
+    return render(request, 'konta/kontakt.html')
+
+
+def python(request):
+
+    return render(request, 'konta/python.html')
+
+
 def odprawa(request):
     komentarze = Comment.objects.all().order_by('-date_added')
     total_komentarze = komentarze.count()

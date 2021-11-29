@@ -1,0 +1,17 @@
+{% extends 'konta/glowna.html'%}
+{% load static %}
+{% block content%}
+
+<h2>Python &nbsp;<img style="vertical-align:middle;" src="{% static '/images/python.jpg' %}"/></h2>
+Gra to jedno ale zdarza mi się czasem pisać w pythonie różne duperelki :)<br><br>
+<strong><a href="https://github.com/policmajsterdev/bald" target="_blank">BALD</a></strong> - program, który po numerze NIP masowo przeszukuje białą listę podatników VAT, pod kątem ustalenia rachunków bankowych.
+Gdy znajdzie rachunki, wyszukuje dla nich placówkę banku wraz ze wszystkimi danymi teleadresowymi.
+Aktualizacja rachunków odbywa się po wybraniu opcji aktualizacji. Na pewno przydatny w PG ;-)<br><br>
+<strong><a href="https://github.com/policmajsterdev/search_btc_wallet" target="_blank">Śledzik BTC</a></strong> - bardzo prosty w użyciu, działa na 2 sposoby: 1. Sprawdza czy adres portfela BTC należy do giełdy
+2. Śledzi ostatnie (największe) wypłaty z portfela i informuje po drodze, gdy napotka dużą ilość transakcji w lub duże saldo<br><br>
+<strong><a href="https://github.com/policmajsterdev/search_bsv_adrdress" target="_blank">Śledzik BSV</a></strong> - śledzi 'w dół' transakcje łańcucha Bitcoin SV<br><br>
+<strong><a href="https://github.com/policmajsterdev/search_OP_RETURN_bitcoinsv" target="_blank">Search OP_RETURN</a></strong> - przeszukuje blok łańcucha Bitcoin SV pod kątem transkacji z wykorzystaniem skryptu OP_RETURN i zwraca wartość<br><br>
+<strong><a href="https://github.com/policmajsterdev/Kalkulator_zabiegow" target="_blank">Kalkulator zabiegów</a></strong> - Kalkulator zabiegów, który liczy cenę za zabieg odejmując koszty. Wynik exportuje się do Excela; toporny kod (dawno to pisałem) ale działa ;-) <br><br>
+W portfolio mam ponadto kilka ciekawych skryptów do pracy jak np. masowe wypakowywanie, sortowanie i łączenie danych operatorów telekomunikacyjnych,
+porównywanie tych danych pod kątem kilku wybranych atrybutów ale nie umieszczam ich tutaj z oczywistych względów ;-)
+{% endblock %}
