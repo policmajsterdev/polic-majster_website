@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home, name="home"),
@@ -10,4 +12,4 @@ urlpatterns = [
     path('ogrze/', views.ogrze, name="ogrze"),
     path('kontakt/', views.kontakt, name="kontakt"),
     path('python/', views.python, name="python"),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

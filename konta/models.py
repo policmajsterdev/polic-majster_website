@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 class BlogPost(models.Model):
     tytul = models.CharField(max_length=150, null=True)
+    header_image = models.ImageField(null=True, blank=True, upload_to="images/")
     autor = models.ForeignKey(User, on_delete=models.CASCADE)
     tresc = models.TextField()
     data_utw = models.DateTimeField(auto_now_add=True, null=True)

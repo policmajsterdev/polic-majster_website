@@ -2,7 +2,7 @@
 {% load static %}
 {% block content%}
 <h2>{{ strona.tytul }}<img style="vertical-align:middle;" src="{% static '/images/nt1.jpg' %}"/></h2>
-
+    <img src="{{ strona.header_image.url }}"><br><br>
     {{ strona.tresc|safe }}
     <div id="data-utw">Wpis z dnia: {{ strona.data_utw }}</div>
 
